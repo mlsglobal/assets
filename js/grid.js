@@ -349,10 +349,10 @@ var Grid = (function() {
 			this.$price = $('<span class="og-price"></span>');
 			this.$title = $( '<h3></h3>' );
 			this.$description = $( '<ul class="og-thumbs"></ul>' );
-            this.$button = $( '<a class="btn btn-primary"></a>' );
+			this.$button = $( '<a class="btn btn-primary" style="margin-bottom: 10px;margin-left: 3px;"></a>' );
 
             //this.$href = $( '<a href="#">Visit website</a>' );
-			this.$details = $( '<div class="og-details"></div>' ).append( this.$title, this.$description, this.$button);
+            this.$details = $( '<div class="og-details"></div>' ).append( this.$title,this.$button, this.$description);
 			this.$loading = $( '<div class="og-loading"></div>' );
 			this.$fullimage = $( '<div class="og-fullimg"></div>' ).append( this.$loading );
 			this.$closePreview = $( '<span class="og-close"></span>' );
